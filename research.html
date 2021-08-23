@@ -1,0 +1,87 @@
+
+<head>
+          <title>Project Phase 3</title>
+          <meta charset="UTF-8">
+          <meta name="description" content="Final Project phase 6">
+          <meta name="group 44" content="Project Phase 6">
+          <link href = "homepage.css" rel = "stylesheet">
+  </head>
+<body>
+<div id= "container">
+        <header>
+        <a id = "logo-link" href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/home.php"><img src = "EDNA.png" alt = ""></a>
+                <div id = "navbar">
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/courses.html">Courses</a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/research.html">Research </a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/work.html">Work</a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/contacts.html">Contact Us</a>
+        </div>
+        </header>
+        <!--side nav-->
+        <div class="sideNav">
+		<a href="https://spring-2021.cs.utexas.edu/cs329e-bulko/soha/phase6/database.php">EDNA Database</a>
+		<a href="https://eureka.utexas.edu/">Eureka Database </a>
+                <a href="https://neuroscience.utexas.edu/faculty-research/faculty-by-research-area?view=application">UT Faculty Site</a>
+        </div>
+
+        <div id = "careers" class="researchContent normal-text center-text">
+		<br><p id = "car"><h2>Research</h2></p><br />
+
+                <p>
+                It is never too early to get started in research!<br>  <br>
+                As a science major, it pays to have hands-on experience in your field. This is especially true for those who are planning to continue their education in graduate programs or intend to work in the field! Even the B.S. in Neuroscience degree requires at minimmum 3 credit hours spent in a laboratory, demonstrating the importance of practical experience. <br> <br>
+		Below are links to a few research topics and different path options. Click on each of the titles to learn more!
+                </p>
+                
+		<div id = "list_one">
+                <ul>
+                        <li> <span id = "behavioral" onclick = "display_one(0)"> Behavioral Neuroscience </span> </li>
+                        <li> <span id = "cellBio" onclick = "display_one(1)"> Cell Biology of neurons, muscle + glia </span> </li>
+                        <li> <span id = "clinical" onclick = "display_one(2)"> Clinical Neuroscience + Pathology </span> </li>
+                        <li> <span id = "cognition" onclick = "display_one(3)"> Cognition + Perception </span> </li>
+                        <li> <span id = "comp" onclick = "display_one(4)"> Computational + Theoretical Neuroscience </span> </li>
+                        <li> <span id = "imaging" onclick = "display_one(5)"> Functional + Molecular Imaging </span> </li>
+                </ul>
+		</div>
+
+                <div id = "list_two">
+                <ul>
+                        <li> <span id = "molecular" onclick = "display_two(0)"> Ion Channels, Neurotransmitter Receptors + Molecular Signaling </span> </li>
+                        <li> <span id = "developmental" onclick = "display_two(1)"> Neural Development + Plasticity </span> </li>
+                        <li> <span id = "disease" onclick = "display_two(2)"> Neurodegenerative Disease + Injury </span> </li>
+                        <li> <span id = "neuroethology" onclick = "display_two(3)">  Neuroethology</span> </li>
+                        <li> <span id = "neurogenetics" onclick = "display_two(4)"> Neurogenetics</span> </li>
+                        <li> <span id = "synaptic" onclick = "display_two(5)"> Synaptic Biology + Small Circuits </span> </li>
+                        <li> <span id = "systems" onclick = "display_two(6)"> Systems + Integrative Neuroscience </span> </li>
+                </ul>
+                </div>
+
+
+                <div id = "description">
+			<b>Click a topic above for information</b>
+		</div>
+	</div>
+
+	<br><br><br><br><br><br><br><br>
+	
+	<div id = "internships" class= "researchContent normal-text center-text">
+		<h3>Tips from graduating seniors:</h3><br />
+
+                <ul>
+                        <li>Get involved early! It takes time to learn lab skills and earn the trust of your teammates. You could also have the opportunity to work in the same lab for a 2 or 3 more years, which might even afford you the opportunity to end up as a co-author on a publication, or earn your own independent project.</li>
+                        <li>Find a faculty member and ask them to be your mentor. Having a mentor as a student can be an invaluable experience in directing your growth and connecting you to valuable resources.</li>
+                        <li>Talk to your professors and let them know you are interested in joining a lab! They may be able to steer you in the direction of their own lab or even to another colleague.</li>
+                        <li>Not every lab has availability or space for an undergraduate assistant. Do not feel discouraged if you are not accepted. It takes time to find the right match! </li>
+        	</ul>
+	<br>
+        </div>
+
+        <footer>
+                <span id = "copyright">© EDNA 2021</span>
+                <span class = "center-text center-justify-text">
+                <span>Page last updated: <script>document.write(document.lastModified);</script></span>
+                </span>
+        </footer>
+	<script src="research.js" > </script>
+</body>
+</html

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+          <title>Project Phase 3</title>
+          <meta charset="UTF-8">
+          <meta name="description" content="Final Project phase 6">
+          <meta name="group 44" content="Project Phase 6">
+          <link href = "homepage.css" rel = "stylesheet">
+  </head>
+<body>
+        
+	<div id= "container">
+        <header>
+        <a id = "logo-link" href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/home.php"><img src = "EDNA.png" alt = ""></a>
+                <div id = "navbar">
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/courses.html">Courses</a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/research.html">Research </a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/work.html">Work</a>
+                <a href = "https://spring-2021.cs.utexas.edu/cs329e-bulko/rmoore/phase6/contacts.html">Contact Us</a>
+        </div>
+        </header>
+
+		<div id = "content">
+		
+			<h3>If you would like to know your current progress with the neuroscience degree, or to get some suggestions
+			on what class you should take, please fill out the following form: </h3>
+			
+			<form method="POST" action="courses.php">
+				<span>What year are you currently in?</span>
+				<select name="year">
+					<option value="freshman">Freshman</option>
+					<option value="sophomore">Sophomore</option>
+					<option value="junior">Junior</option>
+					<option value="senior">Senior</option>
+				</select>
+				<br>
+				
+				<span>What degree plan are you pursuing?</span>
+				<select name="deg_plan">
+					<option value="BS">BS</option>
+					<option value="Scholar">BS - Neuroscience Scholar</option>
+					<option value="BSA">BSA</option>
+				</select>
+				<br>
+				
+				<span>Is there any flags you would like to obtain via neuroscience classes?</span><br>
+				<input type="checkbox" id="writing" name="flag[]" value="writing">
+				<label for="writing">Writing (Upper Level)</label><br>
+				<input type="checkbox" id="quant" name="flag[]" value="quant">
+				<label for="quant">Quantitative Reasoning</label><br>
+				<input type="checkbox" id="inquiry" name="flag[]" value="inquiry">
+				<label for="inquiry">Independent Inquiry</label><br>
+				<span class="attached">Note: These are the only classes that can be obtained by taking neuroscience classes.
+				For any other flags, please look on the UT course schedule webpage for classes you can take.</span><br>
+				<br>
+				
+				<span>Which of the basic prerequisites have you taken?</span><br>
+				<input type="checkbox" id="prereq_NS1" name="prereq[]" value="prereq_NS1">
+				<label for="prereq_NS1">NEU 330 Neural Systems I</label><br>
+				<input type="checkbox" id="prereq_NS2" name="prereq[]" value="prereq_NS2">
+				<label for="prereq_NS2">NEU 335 Neural Systems II</label><br>
+				<input type="checkbox" id="prereq_phy" name="prereq[]" value="prereq_phy">
+				<label for="prereq_phy">physics requirement (any of the following will count)</label>
+				<ul>
+					<li>PHY 303L Engineering Physics II</li>
+					<li>PHY 316 Electricity and Magnetism</li>
+					<li>PHY 317L General Physics II</li>
+				</ul>
+				
+				<span>What other upper division course have you taken?</span><br>
+				<input type="checkbox" id="N337_Exp" name="upper_div[]" value="N337_Exp">
+				<label for="N337_Exp">NEU 337 Experimental Neurobiology</label><br>
+				<input type="checkbox" id="N337_Anal" name="upper_div[]" value="N337_Anal">
+				<label for="N337_Anal">NEU 337 Analytical Skepticism</label><br>
+				<input type="checkbox" id="N340" name="upper_div[]" value="N340">
+				<label for="N340">NEU 340 Neural Systems III: Quantitative Tools</label><br>
+				<input type="checkbox" id="N365L" name="lab[]" value="N365L">
+				<label for="N365L">NEU 365L Neurobiology Laboratory</label><br>
+				<input type="checkbox" id="N365P" name="lab[]" value="N365P">
+				<label for="N365P">NEU 365P Program/Data Analysis Modern Neuroscience</label><br>
+				<input type="checkbox" id="N365V" name="upper_div[]" value="N365V">
+				<label for="N365V">NEU 365V/NEU 377 From the Eye to the Brain</label><br>
+				<input type="checkbox" id="N365W" name="upper_div[]" value="N365W">
+				<label for="N365W">NEU 365W Neurobiology of Addiction</label><br>
+				<input type="checkbox" id="N366D" name="upper_div[]" value="N366D">
+				<label for="N366D">NEU 366D Synaptic Physiology and Plasticity</label><br>
+				<input type="checkbox" id="N366E" name="lab[]" value="N366E">
+				<label for="N366E">NEU 366E Visual Neuroscience</label><br>
+				<input type="checkbox" id="N366L" name="lab[]" value="N366L">
+				<label for="N366L">NEU 366L NeuroImaging Laboratory</label><br>
+				<input type="checkbox" id="N366S" name="lab[]" value="N366S">
+				<label for="N366S">NEU 366S Neuromolecular Genetic/Disease Lab</label><br>
+				<input type="checkbox" id="N337_tech" name="upper_div[]" value="N337_tech">
+				<label for="N337_tech">NEU 337 Neurotechnology</label><br>
+				<input type="checkbox" id="N365D" name="upper_div[]" value="N365D">
+				<label for="N365D">NEU 365D Principles of Drug Action</label><br>
+				<input type="checkbox" id="N365N" name="upper_div[]" value="N365N">
+				<label for="N365N">NEU 365N Nerve Regeneration Invertebrate/Vertebrate</label><br>
+				<input type="checkbox" id="N365T" name="upper_div[]" value="N365T">
+				<label for="N365T">NEU 365T Neurobiology of Disease</label><br>
+				<input type="checkbox" id="N366C" name="upper_div[]" value="N366C">
+				<label for="N366C">NEU 366C Ion Channel/Molecular Physiology Neural Signaling</label><br>
+				<input type="checkbox" id="N367V" name="upper_div[]" value="N367V">
+				<label for="N367V">NEU 367V Evolutionary Neurobiology</label><br>
+				
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+				
+			</form>
+		</div>
+
+		<footer>
+        <span id = "copyright">© EDNA 2021</span>
+        <span class = "center-text center-justify-text">
+        <span>Page last updated: <script>document.write(document.lastModified);</script></span>
+        </span>
+</footer>
+
+	</div>
+</body>
+</html>

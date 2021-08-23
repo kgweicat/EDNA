@@ -1,0 +1,325 @@
+html, body {
+    margin: 0;
+    font-family: "copperplate";
+}
+html {
+	scroll-padding-top: 90px;
+}
+body {
+        padding-top: 80px;
+        min-height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.normal-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16pt;
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+
+.center-text {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.center-justify-text {
+        text-align: center;
+}
+
+h1 {
+        font-size: 32px;
+}
+
+a {
+        color: #ffa500;
+}
+
+header {
+        width: 100%;
+        min-width: 900px;
+        top: 0;
+        position: fixed;
+        overflow: hidden;
+        z-index: 10000;
+        height: 80px;
+        background-color: #FF8C00;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.photos{
+   display:flex;
+   justify-content:center;
+   flex-direction: column;
+   flex-grow: 1;
+}
+
+.img{
+    display:block;
+    width:30%;
+}
+
+.words{
+    display:block;
+    width: 100%;
+    text-align:center;
+
+}
+#logo-link {
+        display: flex;
+        align-items: center;
+}
+
+#logo {
+        height: 50px;
+        margin-left: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+}
+
+#navbar {
+        width: 500px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 30px;
+}
+
+#navbar a {
+        line-height: 80px;
+        text-align: center;
+        padding: 0 20px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+}
+
+#navbar a:hover {
+        background-color: black;
+        color: white;
+}
+footer {
+        height: 80px;
+        background-color: #ff4500;
+        margin-top: 40px;
+        padding: 0px 20px;
+        display: flex;
+        bottom: 0;
+	width:100%;
+}
+
+footer span {
+        align-self: center;
+}
+
+#copyright {
+        position: absolute;
+}
+.sideNav {
+        width:250px;
+        position:fixed;
+        z-index:1;
+        top:90px;
+        left:0;
+        bottom:90px;
+        background-color:#ededed;
+        overflow-x:hidden;
+        padding-top:10px;
+}
+
+.sideNav a {
+        padding: 6px 8px 6px 16px;
+        font-size:14px;
+        color:#2b2b2b;
+        display:block;
+}
+
+.sideNav a:hover {
+        background-color: black;
+        color: white;
+}
+.researchContent {
+	margin-left: 260px;
+	padding: 0px 10px;
+}
+#list_one {
+        display: inline-block;
+        float: left;
+        width: 50%;
+}
+#list_two {
+        display: inline-block;
+        float:left;
+        width:50%;
+}
+#description {
+	margin-left:100px;
+        float:left;
+        height:200px;
+        line-height:125%;
+}
+#careers {
+
+        height: 400px;
+        line-height:125%;
+}
+#careers ul{
+	list-style-type: none;
+}
+
+#careers li{
+	margin-bottom:10px;
+	padding:3px;;
+}
+#careers span{
+	padding:5px;
+	border-radius:10px;
+	background-color:#FF8C00;
+}
+#careers h2{
+	padding-top:6em;
+        margin-top:-40px;
+	padding:10px;
+	border-radius:10px;
+	background-color:#ffbc8a;
+	width:100%;
+}
+#internships{
+	float:left;
+        line-height: 125%;
+        width=80%;
+}
+#internships h1{
+        padding-top:90px;
+        margin-top:-40px;
+        padding:10px;
+        border-radius:10px;
+        background-color:#ffbc8a;
+        width:100%;
+}
+#internships h2{
+	padding-top:90px;
+        margin-top:-40px;
+	padding:10px;
+        border-radius:10px;
+	background-color:#ffbc8a;
+	width:100%;
+}
+#internships h3{
+	padding-top:90px;
+	margin-top:-40px;
+	padding:10px;
+        border-radius:10px;
+        background-color:#ffbc8a;
+        width:100%;
+}
+#internships h4{
+        padding-top:90px;
+        margin-top:-40px;
+        padding:10px;
+	padding-right:30px;
+        border-radius:10px;
+        background-color:#ffbc8a;
+        width:100%;
+}
+#internships p{
+	margin-left:100px;
+}
+iframe {
+        margin:3em;
+        text-align:center;
+}
+.critical {
+color: #ff4500;
+font-size: 18px;
+}
+
+ul, #bottom_nav {
+margin-left: 55px;
+}
+
+#bottom_nav a:hover{
+background-color: #FFFFBF;
+}
+
+.attached {
+margin-top:0px;
+font-size: 14px;
+}
+
+button {
+   width: 100px;
+   background-color: #FF8C00;
+   color: white;
+   padding: 10px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+button:hover {
+   background-color: #FF4500;
+}
+
+form, h3 {
+margin-left: 50px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+form {
+line-height: 1.6;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height:200px;/* you can change as you need it */
+  overflow:auto;/* to get scroll */
+}
+
+/* Links inside the dropdown */
+.dropdownContent input {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ width:100%;
+ font-family: 'Source Sans Pro', sans-serif;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ padding: 12px 20px;
+ font-size:14px;
+ padding-top:10px;
+ margin-top:5px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent input:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownContent {display: block;}
+
